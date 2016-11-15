@@ -14,8 +14,8 @@ class SwinjectServiceAssembly: AssemblyType {
     func assemble(container: Container) {
         
         container.register(APIFetcherServiceType.self) { r in
-            APIFetcher(networkManager: r.resolve(Networkable.self)!, databaseManager: r.resolve(Databaseable)!)
-            }.inObjectScope(.Hierarchy)
+            APIFetcher(networkManager: r.resolve(Networkable.self)!, databaseManager: r.resolve(Databaseable.self)!)
+            }.inObjectScope(.hierarchy)
         
     }
     

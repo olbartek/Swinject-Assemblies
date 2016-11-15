@@ -13,17 +13,17 @@ class SwinjectMockManagerAssembly: SwinjectManagerAssembly {
     
     override func assemble(container: Container) {
         // Call super to register non-mock classes
-        super.assemble(container)
+        super.assemble(container: container)
         
         // ovverride registration of classes with mock classes 
         
         container.register(Networkable.self) { _ in
             MockNetworkManager()
-            }.inObjectScope(.Hierarchy)
+            }.inObjectScope(.hierarchy)
         
         container.register(Bluetoothable.self) { _ in
             MockBluetoothManager()
-            }.inObjectScope(.Hierarchy)
+            }.inObjectScope(.hierarchy)
         
 //        container.register(Databaseable.self) { _ in
 //            MockDatabaseManager()

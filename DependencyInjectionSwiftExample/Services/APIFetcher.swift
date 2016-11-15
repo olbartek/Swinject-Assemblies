@@ -10,8 +10,8 @@ import Foundation
 
 class APIFetcher: BaseObject, APIFetcherServiceType {
     
-    private let networkManager: Networkable
-    private let databaseManager: Databaseable
+    fileprivate let networkManager: Networkable
+    fileprivate let databaseManager: Databaseable
     
     init(networkManager: Networkable, databaseManager: Databaseable) {
         

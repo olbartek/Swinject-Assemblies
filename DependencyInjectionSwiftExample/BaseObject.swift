@@ -14,9 +14,9 @@ class BaseObject {
 
 extension BaseObject {
     class var nameOfClass: String {
-        return NSStringFromClass(self).componentsSeparatedByString(".").last!
+        return NSStringFromClass(self).components(separatedBy: ".").last!
     }
     var nameOfClass: String {
-        return NSStringFromClass(self.dynamicType).componentsSeparatedByString(".").last!
+        return NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
     }
 }

@@ -13,8 +13,8 @@ class SwinjectViewModelAssembly: AssemblyType {
     
     func assemble(container: Container) {
         container.register(MainViewModel.self) { r in
-            MainViewModel(apiFetcher: r.resolve(APIFetcherServiceType)!)
-        }.inObjectScope(.Hierarchy)
+            MainViewModel(apiFetcher: r.resolve(APIFetcherServiceType.self)!)
+        }.inObjectScope(.hierarchy)
     }
     
 }

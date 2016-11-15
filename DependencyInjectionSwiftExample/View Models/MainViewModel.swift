@@ -10,7 +10,7 @@ import Foundation
 
 class MainViewModel {
     
-    private let apiFetcher: APIFetcherServiceType
+    fileprivate let apiFetcher: APIFetcherServiceType
     
     init(apiFetcher: APIFetcherServiceType) {
         

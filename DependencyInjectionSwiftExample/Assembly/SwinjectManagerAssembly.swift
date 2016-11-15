@@ -15,15 +15,15 @@ class SwinjectManagerAssembly: AssemblyType {
         
         container.register(Networkable.self) { _ in
             NetworkManager()
-        }.inObjectScope(.Hierarchy)
+        }.inObjectScope(.hierarchy)
         
         container.register(Bluetoothable.self) { _ in
             BluetoothManager()
-        }.inObjectScope(.Hierarchy)
+        }.inObjectScope(.hierarchy)
         
         container.register(Databaseable.self) { _ in
             DatabaseManager()
-        }.inObjectScope(.Hierarchy)
+        }.inObjectScope(.hierarchy)
     }
     
 }

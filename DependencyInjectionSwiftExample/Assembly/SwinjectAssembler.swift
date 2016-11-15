@@ -19,7 +19,7 @@ class SwinjectAssembler: BaseObject {
         return Static.instance
     }
     
-    private let assembler = try! Assembler(assemblies: [
+    fileprivate let assembler = try! Assembler(assemblies: [
         SwinjectManagerAssembly(),
         SwinjectServiceAssembly(),
         SwinjectViewModelAssembly(),
@@ -31,7 +31,7 @@ class SwinjectAssembler: BaseObject {
 extension SwinjectAssembler {
     
     func mainViewController() -> MainViewController {
-        let mainVC = SwinjectStoryboard.create(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Main") as! MainViewController
+        let mainVC = SwinjectStoryboard.create(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Main") as! MainViewController
         return mainVC
     }
     

@@ -66,6 +66,8 @@
 		4E98A4F81D7F5EBD00F7CEEB /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		4E98A4FD1D7F60CF00F7CEEB /* MockDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockDatabaseManager.swift; path = Managers/MockDatabaseManager.swift; sourceTree = "<group>"; };
 		4E98A5021D7F668D00F7CEEB /* SwinjectAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwinjectAssembler.swift; path = Assembly/SwinjectAssembler.swift; sourceTree = "<group>"; };
+		4EF5DDFB1DDB237400513049 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "../../../../Xcode/DerivedData/DependencyInjectionSwiftExample-aaunyuylyttfxoeoiiuklvvkyjed/Build/Products/Debug-iphonesimulator/Swinject/Swinject.framework"; sourceTree = "<group>"; };
+		4EF5DDFD1DDB237800513049 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = "../../../../Xcode/DerivedData/DependencyInjectionSwiftExample-aaunyuylyttfxoeoiiuklvvkyjed/Build/Products/Debug-iphonesimulator/SwinjectStoryboard/SwinjectStoryboard.framework"; sourceTree = "<group>"; };
 		55209207ED9B1F69F57B7A59 /* Pods-DependencyInjectionSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyInjectionSwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DependencyInjectionSwiftExample/Pods-DependencyInjectionSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		D7738372E1F91E9EFDA4EEB1 /* Pods-DependencyInjectionSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyInjectionSwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DependencyInjectionSwiftExample/Pods-DependencyInjectionSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,8 @@
 		44BDF6ADA0D1E6FCE3551D4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EF5DDFD1DDB237800513049 /* SwinjectStoryboard.framework */,
+				4EF5DDFB1DDB237400513049 /* Swinject.framework */,
 				2D58934968E2D0BF36BEED81 /* Pods_DependencyInjectionSwiftExample.framework */,
 			);
 			name = Frameworks;
@@ -290,7 +294,7 @@
 				TargetAttributes = {
 					4E98A4AD1D7EC4B900F7CEEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -524,7 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olbart.DependencyInjectionSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -538,7 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olbart.DependencyInjectionSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
