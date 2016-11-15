@@ -1,14 +1,16 @@
 PODS:
-  - Swinject (2.0.0-beta.1)
-  - SwinjectStoryboard (1.0.0-beta.1):
-    - Swinject (= 2.0.0-beta.1)
+  - Swinject (2.0.0-beta.2)
+  - SwinjectStoryboard (1.0.0-beta.2):
+    - Swinject (= 2.0.0-beta.2)
 
 DEPENDENCIES:
-  - Swinject (= 2.0.0-beta.1)
-  - SwinjectStoryboard (= 1.0.0-beta.1)
+  - Swinject (= 2.0.0-beta.2)
+  - SwinjectStoryboard (= 1.0.0-beta.2)
 
 SPEC CHECKSUMS:
-  Swinject: a34eeb238ea2ebf1973386c663191542f56281bb
-  SwinjectStoryboard: 0a7570a627643abf924125da7e5e3b6bdc69d092
+  Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
+  SwinjectStoryboard: b52b45821a50386ef604c3cd098f8029a50a268d
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6a021938d3e61e99cd945afaae26af4f902c8204
+
+COCOAPODS: 1.0.1
