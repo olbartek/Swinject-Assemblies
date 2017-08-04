@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2314CB6E524A65E27D01DD27D9DDE990"
+               BlueprintIdentifier = "D24F475D3B7194DF68DC8D5B6C3431BF"
                BuildableName = "Pods_DependencyInjectionSwiftExample.framework"
                BlueprintName = "Pods-DependencyInjectionSwiftExample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2314CB6E524A65E27D01DD27D9DDE990"
+            BlueprintIdentifier = "D24F475D3B7194DF68DC8D5B6C3431BF"
             BuildableName = "Pods_DependencyInjectionSwiftExample.framework"
             BlueprintName = "Pods-DependencyInjectionSwiftExample"
             ReferencedContainer = "container:Pods.xcodeproj">
